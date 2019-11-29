@@ -4,7 +4,6 @@ class Nbu:
     def __init__(self):
         self.url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json'
 
-
     def today_currencies(self):
         today = requests.get(self.url).json()
         date = today[0]['exchangedate']
@@ -20,6 +19,7 @@ class Nbu:
                 text_row = file.write(text_row)
                 num += 1
         return info
+    
     def get_currency(self):
         user_date = input('Enter date in format YYYYMMDD:')
         user_currency = input('Currency name in Ukrainian:').strip()
