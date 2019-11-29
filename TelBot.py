@@ -1,7 +1,7 @@
 import telebot
 import NBU
 
-bot = telebot.TeleBot("787904888:AAGc3RTxvosHWUUGL7EK3NhTn1eyhFrGFy8")
+bot = telebot.TeleBot("*****")
 
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True)
 keyboard1.row('Привет', 'Текущий курс валют НБУ')
